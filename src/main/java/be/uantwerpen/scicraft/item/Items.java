@@ -19,6 +19,7 @@ public class Items {
     public static final Item PROTON = new ProtonItem(new Item.Settings().group(ItemGroup.MISC).maxCount(64));
     public static final Item NEUTRON = new NeutronItem(new Item.Settings().group(ItemGroup.MISC).maxCount(64));
 
+
     public static final Item ENTROPY_CREEPER_SPAWN_EGG = new SpawnEggItem(Entities.ENTROPY_CREEPER,
             0xbb64e1, 0x5d0486, new FabricItemSettings().group(ItemGroup.MISC));
 
@@ -26,7 +27,7 @@ public class Items {
     public static final Item PION_NUL = new BlockItem(Blocks.PION_NUL, new FabricItemSettings().group(ItemGroups.ELEMENTARY_PARTICLES));
     public static final Item PION_MINUS = new BlockItem(Blocks.PION_MINUS, new FabricItemSettings().group(ItemGroups.ELEMENTARY_PARTICLES));
     public static final Item PION_PLUS = new BlockItem(Blocks.PION_PLUS, new FabricItemSettings().group(ItemGroups.ELEMENTARY_PARTICLES));
-
+    public static final Item NEUTRON_BLOCK = new BlockItem(Blocks.NEUTRONBLOCK, new FabricItemSettings().group(ItemGroups.ELEMENTARY_PARTICLES));
     /**
      * Register an Item
      *
@@ -50,6 +51,7 @@ public class Items {
         registerItem(PION_NUL, "pion_nul");
         registerItem(PION_MINUS, "pion_minus");
         registerItem(PION_PLUS, "pion_plus");
+        registerItem(NEUTRON_BLOCK, "neutron_block");
         registerItem(ENTROPY_CREEPER_SPAWN_EGG, "entropy_creeper_spawn_egg");
     }
 }
